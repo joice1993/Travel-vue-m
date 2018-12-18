@@ -2,7 +2,7 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
           <img class="item-img" :src="item.imgUrl">
         </div>
@@ -18,25 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-        title: '大连圣亚海洋世界',
-        desc: '浪漫大连首站，浪漫的海洋主题乐园'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg',
-        title: '北京野生动物园',
-        desc: '北京大兴区一零六国道'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg',
-        title: '龙熙温泉',
-        desc: '韩式真露，带来韩国的温泉疗效，能舒筋活血，增强新陈代谢'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -50,7 +33,7 @@ export default {
     text-indent: .2rem
   .item-img-wrapper
     height: 0
-    padding-bottom: 33.9%
+    padding-bottom: 37.09%
     overflow: hidden
   .item-img
     width: 100%
