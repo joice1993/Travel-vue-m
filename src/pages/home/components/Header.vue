@@ -7,10 +7,12 @@
       <span class="iconfont icon-sousuo"></span>
       输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
-      {{this.city}}
-      <span class="iconfont icon-jiantou arrow-icon"></span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{this.city}}
+        <span class="iconfont icon-jiantou arrow-icon"></span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -28,7 +30,7 @@ export default {
   .header
     display: flex
     color: #fff
-    line-height: .86rem
+    line-height: $headerHeight
     background: $bgColor
     .header-left
       float: left
@@ -48,6 +50,7 @@ export default {
     .header-right
       float: right
       width: 1.24rem
+      color: #fff
       text-align: center
       .arrow-icon
         font-size: .24rem
