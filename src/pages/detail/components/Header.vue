@@ -38,6 +38,9 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -69,6 +72,7 @@ export default {
     text-align: center
     background: $bgColor
     overflow: hidden
+    z-index: 2
     .header-fixed-back
       position: absolute
       top: 0
