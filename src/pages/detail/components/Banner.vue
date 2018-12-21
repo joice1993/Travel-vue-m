@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="banner" @click="handleBannerClick">
-      <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1809/9f/9f1a73fa9754fdeaa3.img.jpg_600x330_a8963c2a.jpg">
+      <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1809/a3/a3cf5560a02e154a3.img.jpg_350x240_7b7705d3.jpg">
       <div class="banner-info">
         <div class="banner-title">大连圣亚海洋世界(AAAA景区)</div>
         <div class="banner-number">
