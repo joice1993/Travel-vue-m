@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://joice1993.github.io/travel-vue-m/static/mock',
+        target: '/travel-vue-m/static/mock',
         // pathRewrite: {
         //   '^/api': '/static/mock'
         // }
