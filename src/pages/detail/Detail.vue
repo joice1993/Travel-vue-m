@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     getDetailInfo () {
-      axios.get('/api/detail.json', {
+      axios.get('https://joice1993.github.io/travel-vue-m/static/mock/detail.json', {
         params: {
           id: this.$route.params.id
         }
